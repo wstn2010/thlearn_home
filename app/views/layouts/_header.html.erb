@@ -31,7 +31,7 @@
         <ul class="nav navbar-nav navbar-right">
 
       <li><%= link_to "ホーム", root_path %></li>
-      <li><%= link_to "ヘルプ", help_path %></li>
+      <li><%= link_to "詳細説明", details_path %></li>
 
       <% if signed_in? %>
         <li><%= link_to "メンバー", users_path %></li>
@@ -52,7 +52,8 @@
           </ul>
         </li>
       <% else %>
-        <li><%= link_to "ログイン", signin_path %></li>
+<!--         <li><%= link_to "ログイン", signin_path %></li>
+ -->      
       <% end %>
 
         </ul>

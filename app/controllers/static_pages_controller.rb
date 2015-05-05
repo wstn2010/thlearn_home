@@ -6,10 +6,32 @@ class StaticPagesController < ApplicationController
       {:url=>"/master.jsp", :title=>"会計基準マスター", :desc=>"会計基準ごとに仕上げていきます"},
       {:url=>"/exam.jsp", :title=>"会計基準穴埋め実力テスト", :desc=>"<font color=red>New!</font> 穴埋め問題で定着度を確認しましょう"},
       {:url=>"http=>//diyeda.appspot.com/", :title=>"財務諸表論 超短答演習ツール", :desc=>"<font color=red>New!</font> 丸暗記はやめましょう。試験後の実力維持にも"},
-      {:url=>"/app.jsp", :title=>"財務諸表論ワークブック(穴埋式)", :desc=>"<a href='/app.jsp?anony=true'>ログインしないでスタート</a>"},
-      {:url=>"/app.jsp?selectMode=true", :title=>"財務諸表論ワークブック(選択式)", :desc=>"<a href='/app.jsp?selectMode=true&anony=true'>ログインしないでスタート</a>"}
+      {:url=>"/app.jsp", :title=>"財務諸表論ワークブック(穴埋式)", :desc=>"会計基準等の穴埋め問題を任意の範囲から出題し、演習するための アプリケーションです。<br/><a href='/app.jsp?anony=true'>ログインしないでスタート</a>"},
+      {:url=>"/app.jsp?selectMode=true", :title=>"財務諸表論ワークブック(選択式)", :desc=>"学習初期に適した選択式バージョンです。<br/><a href='/app.jsp?selectMode=true&anony=true'>ログインしないでスタート</a>"}
     ]
   end
+
+  def details
+  end
+
+  def effect_login
+  end
+
+  def data
+  end
+
+  def app_master
+  end
+
+  def app_workbook
+  end
+
+  def app_exam
+  end
+
+  def useful_links
+  end
+
 
   def help
   end

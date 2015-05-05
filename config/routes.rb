@@ -12,6 +12,14 @@ SampleApp::Application.routes.draw do
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
   match '/help',    to: 'static_pages#help',    via: 'get'
+  match '/details', to: 'static_pages#details',    via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
+
+  match '/effect_login', to: 'static_pages#effect_login',    via: 'get'
+  match '/data', to: 'static_pages#data',    via: 'get'
+  match '/app_master', to: 'static_pages#app_master',    via: 'get'
+  match '/app_workbook', to: 'static_pages#app_workbook',    via: 'get'
+  match '/app_exam', to: 'static_pages#app_exam',    via: 'get'
+  match '/useful_links', to: 'static_pages#useful_links',    via: 'get'
 end

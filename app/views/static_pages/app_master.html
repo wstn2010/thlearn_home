@@ -1,0 +1,87 @@
+<div class="row"> 
+  
+	<div class="col-xs-3 th-container-nav"> 
+    	<%= render 'static_pages/sidebar' %>
+	</div>
+
+
+<div class="col-xd-9 th-container-body"> 
+   
+    <h1>アプリ:会計基準マスター</h1>
+    
+    <h2>概要</h2>
+    <p>
+	会計基準を一つずつ学習し、仕上げていくアプリケーションです。
+	心理学者のヘルマン・エビングハウスによって導かれた「エビングハウスの忘却曲線」の考え方を
+	アレンジしたアルゴリズムを用いて、ユーザの解答状況に応じてた出題コントロールを行います。
+    </p>
+    
+    <div class="photo"> 
+      <a href="#course"> <img src="/assets/course_s.png" alt="Course" /> </a> 
+    </div> 
+    <div class="photo"> 
+      <a href="#start"> <img src="/assets/start_s.png" alt="Start" /> </a> 
+    </div> 
+    <div class="photo"> 
+      <a href="#select"> <img src="/assets/select_s.png" alt="Select" /> </a> 
+    </div> 
+    <div class="photo"> 
+      <a href="#check"> <img src="/assets/check_s.png" alt="Check" /> </a> 
+    </div> 
+	<div id="course"> 
+		<img src="/assets/course.png" alt="Course" /> 
+	</div> 
+	<div id="start"> 
+		<img src="/assets/start.png" alt="Start" />
+	</div> 
+	<div id="select"> 
+		<img src="/assets/select.png" alt="Select" />
+	</div> 
+	<div id="check"> 
+		<img src="/assets/check.png" alt="Check" />
+	</div> 
+
+
+	<h2>学習の流れ</h2>
+	<ol>
+		<li><a href=/ >ホームページ</a>右サイドのスタートボタンを押して演習を開始します</li>
+		<li>リストアップされた学習中コースから、学習するコースを選択します。</li>
+		  <ul>
+		  <li>コースパネルには、進捗状況が表示されます。復習可能キーワードとは、復習時期が到来したキーワードを表します。待機中キーワードとは、復習時期が未だ到来していないキーワードを表します。</li>
+		  </ul>
+		<li>学習するコースを選択すると、直ちにクイズが始まります。</li>
+		  <ul>
+		  <li>クイズ画面では、キーボードのみですべての操作が可能です。</li>
+		  </ul>
+		<li>すべてのクイズを穴埋め方式まで正解するか、規定のクイズ数に到達したとき、演習結果が表示・保存されます。</li>
+	</ol>
+	<p>
+	「会計基準穴埋め実力テスト」アプリで、定期的に定着度チェックを行うとより効果的です。
+	</p>
+	
+	<h2>演習結果の削除</h2>
+	<p>
+	学習中コースの一覧画面において、コースパネルの右側に削除ボタンがあります。このボタンを押すと、
+	そのコースに関する成績データはすべて削除されます。
+	</p>
+
+
+	<h2>よくある質問とその回答</h2>
+	<h3>同じキーワードについて、何回連続正解したら学習済になるの？</h3>
+	<p>
+	初回の学習を完了した後、２回連続で正解すると最短回数で学習済み状態になります。
+	定着度チェックのために一定の出題間隔を設けています。そのため、学習終盤ですべての
+	問題が待機状態（最大１週間程度）になることがあります。
+	</p>
+	<h3>学習開始ができないコースがあります。</h3>
+	<p>
+	不具合によりデータベースが壊れている可能性があります。
+	申し訳ありませんが、一度コースを削除し、再度コースを
+	選択してください。
+	</p>
+
+</div>
+
+</div> <!-- th-container -->
+
+
