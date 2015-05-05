@@ -1,34 +1,78 @@
-<% if signed_in? %>
-  <div class="row">
-    <aside class="span4">
-      <section>
-        <%= render 'shared/user_info' %>
-      </section>
-      <section>
-        <%= render 'shared/stats' %>
-      </section>
-      <section>
-        <%= render 'shared/micropost_form' %>
-      </section>
-    </aside>
-    <div class="span8">
-      <h3>Micropost Feed</h3>
-      <%= render 'shared/feed' %>
+
+
+
+<div class="row">
+
+  <div class="col-xs-9">
+
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="descblock">
+          <div class="section">
+          このサイトについて
+          </div>
+          <div class="desc">
+            <ul>
+            <li>会計系試験(税理士試験,公認会計士試験,日商簿記検定)の理論科目定着をサポート</li>
+            <li>記憶メカニズムに基づいて穴埋め問題を出題　「<a href=/app_master.html>会計基準マスター</a> 」アプリ</li>
+            <li>穴埋め実力テストで定着度確認　「<a href=/app_exam.html>会計基準穴埋め実力テスト</a>」アプリ <font color=red>New!</font></li>
+            <li>苦手分野抽出、集中強化のための穴埋め演習　「<a href=/app_workbook.html>財務諸表論ワークブック</a>」アプリ</li>
+            </ul>
+            <div class="gaccount">
+            お手持ちのGmailアドレス(Googleアカウント)で、すぐに利用できます。
+            Googleアカウントをお持ちでない方は、<a href=https://www.google.com/accounts/NewAccount?hl=ja >
+            ここ</a>から無料で簡単に取得できます(<a href=/effect_login.html >ログインするとできること</a>) 。   
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div class="row">
+      <div class="col-xs-12"> <h1>アプリケーション</h1></div>
+
+      <% for app in @apps %>
+        <div class="col-xs-4">
+          <div class="panel panel-default panel_custom">
+            <div class="panel-body">
+              <%= render 'static_pages/goods_simple', object: app %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+
   </div>
-<% else %>
-  <div class="center hero-unit">
-    <h1>Welcome to the Sample App</h1>
 
-    <h2>
-      This is the home page for the
-      <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-      sample application.
-    </h2>
+  <div class="col-xs-3">
+    <center>
+    <p><small>
+    最新アップデート情報をtwitterで配信しています。
+    </small>
+    </p>
+    </center>
+          
+    <a class="twitter-timeline" href="https://twitter.com/kenputer" data-widget-id="595371074130345984">@kenputerさんのツイート</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-    <%= link_to "Sign up now!", signup_path,
-                                class: "btn btn-large btn-primary" %>
   </div>
+</div>
 
-  <%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
-<% end %>
+
+
+
+<%= image_tag select_ad %>
+
+</td>
+
+
+
+<td align="left" valign="top">
+
+
+
+<!-- twitter -->
+</td>
+
+</tr>
+</table>    

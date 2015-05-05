@@ -1,0 +1,10 @@
+<div class="simple_desc">
+
+
+	<h2><%= link_to object[:title], object[:url] unless object.nil? %></h2>
+
+	<div>
+	<%= object[:desc].html_safe  unless object.nil? %>
+	</div>
+
+</div>
