@@ -7,29 +7,24 @@
 
     <div class="row">
       <div class="col-xs-12">
-        <div class="descblock">
           <div class="section">
           このサイトについて
           </div>
           <div class="desc">
             <ul>
             <li>会計系試験(税理士試験,公認会計士試験,日商簿記検定)の理論科目定着をサポート</li>
-            <li>記憶メカニズムに基づいて穴埋め問題を出題　「<a href=/app_master.html>会計基準マスター</a> 」アプリ</li>
-            <li>穴埋め実力テストで定着度確認　「<a href=/app_exam.html>会計基準穴埋め実力テスト</a>」アプリ <font color=red>New!</font></li>
-            <li>苦手分野抽出、集中強化のための穴埋め演習　「<a href=/app_workbook.html>財務諸表論ワークブック</a>」アプリ</li>
             </ul>
-            <div class="gaccount">
-            お手持ちのGmailアドレス(Googleアカウント)で、すぐに利用できます。
+            <div class="alert alert-info" role="alert">
+            一部のアプリケーションは、学習結果を保持するためにGoogleアカウントが必要です。
             Googleアカウントをお持ちでない方は、<a href=https://www.google.com/accounts/NewAccount?hl=ja >
             ここ</a>から無料で簡単に取得できます(<a href=/effect_login.html >ログインするとできること</a>) 。   
             </div>
           </div>
-        </div>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-xs-12"> <h1>アプリケーション</h1></div>
+      <div class="col-xs-12 apps"> アプリケーション</div>
 
       <% for app in @apps %>
         <div class="col-xs-4">
@@ -60,8 +55,8 @@
 
 
 
-
-<%= image_tag select_ad %>
+<% ad = select_ad  %>
+<%= link_to (image_tag ad[:img]), ad[:url] %>
 
 </td>
 

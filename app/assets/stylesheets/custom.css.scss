@@ -81,7 +81,7 @@ textarea {
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+/*h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
@@ -90,14 +90,14 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
 }
-
-h2 {
+*/
+/*h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   font-weight: normal;
 }
-
+*/
 p {
   font-size: 1.1em;
   line-height: 1.7em;
@@ -265,8 +265,12 @@ aside {
 
 
 .panel_custom {
-  height: 160px;
+  height: 200px;
   overflow:scroll;
+}
+
+.panel-body {
+  height: 100%;
 }
 
 .maker_title {
@@ -394,7 +398,6 @@ aside {
   list-style: circle;
 }
 
-
 a{
   color: #0083c8;
 }
@@ -418,6 +421,36 @@ h3 {
 
 h1,h2{
   font-weight: normal;
+}
+
+.simple_desc {
+
+  height: 100%;
+  position: relative;
+
+  h2 {
+    font-size: 1.1em;
+    padding: 0;
+    margin: 0;
+  }
+
+  .start_menus {
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
+}
+ 
+
+.apps {
+  font-size: 1.3em;
+  color: green;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 h3,h4,h5{
