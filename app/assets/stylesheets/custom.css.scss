@@ -29,6 +29,14 @@ body {
   /* html と body 要素はパディングやマージンを持てません。*/
 }
 
+.banner {
+  padding: 8px;
+  color: black;
+  border: 2px solid red;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
 /* フッターを下部へ押しやるための、コンテンツのラッパー */
 #wrap {
   min-height: 100%;
